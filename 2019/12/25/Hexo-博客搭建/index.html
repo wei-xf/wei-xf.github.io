@@ -16,7 +16,7 @@
 <meta property="og:description" content="一直想找个时间搭建个博客，记录学习生活小事。折腾许久才把博客搭建成功。在此记录下搭建过程，也加深下印象。 准备要求 安装 Node 环境   Git 安装  Hexo 安装在命令行执行以下命令（需 root 权限）全局安装 Hexo 1$ npm install -g hexo-cli 到此环境已安装完成，就是这么简单。 搭建博客 初始化 hexo  1$ hexo init blog 该命令即生">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2019-12-25T13:14:58.000Z">
-<meta property="article:modified_time" content="2019-12-25T14:59:49.000Z">
+<meta property="article:modified_time" content="2019-12-25T15:10:46.000Z">
 <meta property="article:author" content="Wei xianfeng">
 <meta name="twitter:card" content="summary">
   
@@ -215,6 +215,10 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></li>
 <li><p>修改 <code>_config.yml</code>（在站点目录下）。文件末尾修改为：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https:&#x2F;&#x2F;hexo.io&#x2F;docs&#x2F;deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:&lt;Github账号名称&gt;&#x2F;&lt;Github账号名称&gt;.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></li>
+<li><p>推送到 <code>Github Pages</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br><span class="line">...</span><br><span class="line">...</span><br><span class="line">INFO  Deploy done: git</span><br></pre></td></tr></table></figure>
+<p>自此，博客已同步配置到 <code>Github Pages</code> 上，访问 <a href="https://wei-xf.github.io/" target="_blank" rel="noopener">&lt;Github账号名称&gt;.github.io</a>。</p>
+</li>
 </ul>
 
       
